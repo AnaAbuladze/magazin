@@ -1,0 +1,279 @@
+@font-face {
+  font-family: 'GeneralSans-Regular';
+  src: url('../font/GeneralSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeneralSans-Bold';
+  src: url('../font/GeneralSans-Bold.woff2') format('woff2');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeneralSans-Light';
+  src: url('../font/GeneralSans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeneralSans-Medium';
+  src: url('../font/GeneralSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.largtext {
+  font-family: "GeneralSans-bold";
+  text-transform: uppercase;
+  color: $primary-color-black;
+  font-size: 276px;
+  line-height: 1;
+  text-align: center;
+
+  @include responsive("xxl") {
+    font-size: 211px;
+  }
+   @include responsive("xl") {
+        font-size: 169px;
+        margin-bottom: 50px;
+        margin-top: 40px;
+    }
+    @include responsive("lg") {
+        font-size: 130px;
+        
+    }
+      @include responsive("md") {
+        font-size: 100px
+        
+    }
+    @include responsive("sm") {
+        font-size: 54px
+        
+    }
+  }
+
+.headline-small{
+    font-family: "GeneralSans-medium";
+  color: $primary-color-black;
+  font-size: 72px;
+  line-height: 110%;
+  @include multilineElipsis(1);
+
+}
+
+.text-default {
+  color: $primary-color-black;
+  font-size: 22px;
+  font-family: "GeneralSans-bold";
+  text-transform: uppercase;
+}
+
+.article-header {
+  color: $primary-color-black;
+  font-size: 16px;
+  font-family: "GeneralSans-bold";
+  text-transform: uppercase;
+}
+
+.text-default2 {
+  color: $primary-color-black;
+  font-size: 24px;
+  font-family: "GeneralSans-bold";
+
+}
+
+.text-default1{
+color: $primary-color-black;
+  font-size: 16px;
+  font-family: "GeneralSans-bold";
+  text-transform: uppercase;
+   line-height: 100%;
+}
+.banner-text {
+  color: $primary-color-white;
+  font-size: 22px;
+  font-family: "GeneralSans-medium";
+  text-transform: uppercase;
+}
+
+.banner-secondary-text {
+  color: $primary-color-white;
+  font-size: 20px;
+  font-family: "GeneralSans-regular";
+}
+
+.text-medium {
+  color: $primary-color-black;
+  font-size: 22px;
+  font-family: "GeneralSans-regular";
+}
+
+.heading-larg-text {
+  width: 70%;
+  color: $primary-color-black;
+  font-size: 104px;
+  line-height: 110%;
+  font-family: "GeneralSans-bold";
+  text-transform: uppercase;
+  letter-spacing: 1px;
+   @include multilineElipsis(2);
+   @include responsive("xxl") {
+    font-size: 82px;
+  }
+
+  @include responsive("md") {
+    font-size: 40px;
+  }
+}
+.heading-pharagrap {
+  color: $primary-color-black;
+  font-size: 18px;
+  line-height: 180%;
+  font-family: "GeneralSans-regular";
+   @include multilineElipsis(7);
+}
+
+.heading-pharagrap2 {
+  color: $primary-color-black;
+  font-size: 16px;
+  line-height: 180%;
+  font-family: "GeneralSans-regular";
+     @include multilineElipsis(4);
+}
+
+.card-article-headline {
+  color: $primary-color-black;
+  font-size: 32px;
+  font-family: "GeneralSans-bold";
+  line-height: 120%;
+  @include multilineElipsis(2);
+   @include responsive("sm") {
+        font-size: 22px;
+        
+    }
+}
+
+.bold-48 {
+  color: $primary-color-black;
+  font-size: 48px;
+  font-family: "GeneralSans-bold";
+  line-height: 120%;
+}
+
+
+.detail-bold-text {
+  color: $primary-color-black;
+  font-size: 14px;
+  line-height: 160%;
+  font-family: "GeneralSans-bold";
+}
+
+.detail-regular-text {
+  color: $primary-color-black;
+  font-size: 14px;
+  line-height: 160%;
+  font-family: "GeneralSans-regular";
+}
+
+.poster-header {
+  color: $primary-color-white;
+  font-size: 88px;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: "GeneralSans-bold";
+   @include responsive("xxl") {
+font-size: 42px;
+  }
+}
+.poster-header-30{
+   color: $primary-color-white;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: "GeneralSans-bold";
+}
+.poster-header1{
+    color: $primary-color-white;
+  font-size: 50px;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: "GeneralSans-bold";
+}
+
+
+.poster-subtitle {
+  color: $primary-color-white;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: "GeneralSans-medium";
+}
+.poster-subtitle1{
+  color: $primary-color-white;
+  font-size: 25px;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: "GeneralSans-bold";
+}
+.poster-subtitle-15{
+   color: $primary-color-white;
+  font-size: 15px;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: "GeneralSans-medium";
+}
+.detail-page-header{
+    color: $primary-color-black;
+  font-size: 32px;
+  font-family: "GeneralSans-bold";
+  line-height: 110%;
+    text-transform: uppercase;
+
+
+}
+.text-medium{
+    color: $primary-color-black;
+  font-size: 20px;
+  line-height: 180%;
+  font-family: "GeneralSans-medium";
+}
+.text-20-bold{
+    color: $primary-color-black;
+  font-size: 20px;
+  line-height: 180%;
+   font-family: "GeneralSans-bold";
+}
+.text-default-16-bold{
+    color: $primary-color-black;
+  font-size: 16px;
+  font-family: "GeneralSans-bold";
+  line-height: 180%;
+  
+}
+.text-default-16-regular{
+    color: $primary-color-black;
+  font-size: 16px;
+    font-family: "GeneralSans-regular";
+
+  line-height: 180%;
+
+}
+.text-queto {
+  color: $primary-color-black;
+  font-size: 94px;
+  line-height: 100%;
+  text-transform: uppercase;
+  font-family: "GeneralSans-bold";
+}
+
+.article-headline{
+  color: $primary-color-black;
+  font-size: 100px;
+  line-height: 100%;
+  font-family: "GeneralSans-medium";
+   @include multilineElipsis(3);
+}
+

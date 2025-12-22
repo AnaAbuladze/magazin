@@ -1,0 +1,36 @@
+.author-container {
+    padding: 48px 0;
+}
+
+.author-item-cont{
+    border-bottom: 1px solid $primary-color-black;
+    padding: 48px 5px;
+    transition: 0.3s;
+  overflow: hidden;
+}
+.author-item-cont:last-of-type{
+    border-bottom:none ;
+}
+.author-info-cont{
+    gap:48px;
+}
+.podcaast-meta-info{
+    flex: 1;
+}
+
+
+.author-item-cont:hover .next-page {
+  color: rgba(0, 0, 0, 0.8);
+  transform: translateX(3px);
+  
+}
+.author-img {
+  transition: transform 0.3s ease;
+}
+
+.author-item-cont:hover .author-img {
+  transform: scale(1.05);
+}
+.author-meta{
+  gap:96px;
+}

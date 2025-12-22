@@ -1,0 +1,123 @@
+.detail-header{
+    justify-content: space-between;}
+
+    .article-aside-cont{
+        width: 30%;
+    }
+    .detail-article{
+        gap:64px;
+    }
+    .author-info{
+     gap:16px;
+     border-bottom: 1px solid $primary-color-black;
+    }
+    .author-img{
+        border-radius: 50%;
+         @include aspectRatio(90, 90);
+    }
+   .aside-article-details{
+    gap:16px;
+   }
+.magazine-article-content {
+   
+    gap: 24px; 
+}
+.article-cover{
+      overflow: hidden;
+  object-fit: contain;
+    width: 100%;
+     @include aspectRatio(1530, 880);
+}
+
+.article-paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 24px; 
+   
+}
+.article-quote{
+    gap:24px;
+    padding: 48px 0;
+    border-top: 1px solid $primary-color-black;
+    border-bottom: 1px solid $primary-color-black;
+    div{
+        gap:24px;
+    }
+}
+.detail-article{
+    margin-bottom:192px;
+}
+.new-add{
+    margin-bottom: 192px;
+    border-top:1px solid $primary-color-black ;
+}
+/*podcast detail*/
+.article-header{
+    gap:16px;
+}
+.podcast-gap{
+    gap:96px;
+}
+.pod-cont-detail{
+    left: 0;
+    justify-content: space-between;
+    padding: 19px 36px;
+}
+.podcast-info{
+    gap:32px;
+}
+.listenon-cont{
+    padding-bottom: 48px;
+    border-bottom: 1px solid $primary-color-black;
+    a{
+        font-size: 24px;
+    }
+}
+/*author detail*/
+.author-detail-img{
+    width: 350px;
+    @include aspectRatio(350, 350);
+    border-radius: 50%;
+   
+}
+.author-make{
+    gap:96px;
+}
+.author-make-cont{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.author-make-item{
+    width: 50%;
+    border: 1px solid $primary-color-black;
+    gap:48px;
+    transition: 0.3s;
+}
+.author-make-img{
+    width: 150px;
+      @include aspectRatio(150, 150);
+
+}
+.author-make-text{
+    gap:16px;
+    align-items: start;
+    justify-content: center;
+}
+.author-make-item:hover {
+border:1px solid rgba(0,0,0,0.1) ;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1); 
+}
+
+.author-make-item:hover .card-article-headline {
+    color: grey; 
+}
+
+.author-make-item img {
+    border-radius: 8px; 
+    transition: transform 0.3s ease;
+}
+
+.author-make-item:hover img {
+    transform: scale(1.05); 
+}

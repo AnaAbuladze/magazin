@@ -1,2 +1,1 @@
-# magazin
-magazin page
+# magazin-website
