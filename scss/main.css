@@ -4857,7 +4857,7 @@ a {
 @media (max-width: 576px) {
   .container {
     max-width: 100%;
-    padding: 0 4px;
+    padding: 0 31px;
   }
 }
 
@@ -5284,6 +5284,7 @@ header {
 
 .fa-bars {
   font-size: 20px;
+  color: white;
 }
 
 .fa-xmark {
@@ -5466,9 +5467,15 @@ input::placeholder {
   width: 29%;
   margin-top: 24px;
 }
+@media (max-width: 768px) {
+  .footer-col {
+    width: auto;
+  }
+}
 .footer-col a {
   transition: all 0.3s ease;
   cursor: pointer;
+  color: white;
 }
 .footer-col a:hover {
   text-decoration: underline;
@@ -5476,10 +5483,6 @@ input::placeholder {
 }
 
 .footer-logo p {
-  color: white;
-}
-
-.footer-col a {
   color: white;
 }
 

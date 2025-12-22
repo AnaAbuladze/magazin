@@ -49,6 +49,7 @@ max-width: 800px;
     @include responsive("lg") {
 flex-direction: column-reverse;
   }
+  
 }
 .site-header-cont {
     width: 100%;
