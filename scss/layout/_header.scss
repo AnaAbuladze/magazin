@@ -55,6 +55,7 @@ display: block;
  }
   .fa-xmark{
     color: $primary-color-white;
+    font-size: 25px;
   }
    .mobile-menu-box {
     position: fixed;
@@ -82,6 +83,7 @@ display: block;
         right: 20px;
         top: 20px;
         padding: 10px;
+        font-size: 20px;
     }
     .mobile-menu-nav{
         display: flex;
