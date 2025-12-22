@@ -4913,6 +4913,7 @@ a {
 body {
   background-color: white;
   color: black;
+  overflow: hidden;
 }
 
 .body.dark-mode,
