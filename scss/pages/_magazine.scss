@@ -1,9 +1,20 @@
 .magazine-categories{
     justify-content: space-between;
+    
+  @include responsive("lg") {
+        flex-direction: column;
+        gap: 40px;
+        
+        
+    }
 }
 .categories-list{
     ul{
       gap:12px;
+      flex-wrap: wrap;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
     }
 }
 .magazin-list-container {
@@ -11,7 +22,12 @@
     flex-wrap: wrap; 
     width: 100%;
   padding: 60px 0;
-   
+   @include responsive("lg") {
+        width: 100%;
+        gap:20px;
+        
+    }
+
 }
 
 .magazin-list-item { 
@@ -26,9 +42,48 @@
     align-items: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
         gap:32px;
-
+        border-top: none;
+    
+   &:nth-child(3n + 2) {
+    border-left: none;
+    border-right: none;
 }
 
+&:nth-child(-n+3){
+       border-top:1px solid $primary-color-black ;
+    }
+
+   @include responsive("xxl") {
+        width: 50%;
+    &:nth-child(3n + 2) {
+            border-left: 1px solid $primary-color-black;
+            border-right: 1px solid $primary-color-black;
+        }
+
+        &:nth-child(odd) {
+            border-right: none;
+        }
+&:nth-child(3){
+       border-top:none ;
+    }
+    
+     }
+    
+    @include responsive("lg") {
+        width: 100%;
+        border-top:  1px solid $primary-color-black;;
+           &:nth-child(odd) {
+            border-right:  1px solid $primary-color-black;
+        }
+        
+    }
+     @include responsive("md") {
+       padding: 6px;
+        
+        
+    }
+
+}
 .magazin-list-item:hover {
   background-color: whitesmoke;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
@@ -70,4 +125,5 @@
     }
     .hero{
         margin-bottom: 173px;
+        padding: 5px;
     }

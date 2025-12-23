@@ -5,10 +5,21 @@
 .podcast-item-cont{
     border-bottom: 1px solid $primary-color-black ;
     padding: 48px 0;
+    align-items: center;
+    gap: 40px;
     &:first-child{
         margin-top: 144px;
+          @include responsive("lg") {
+
+    margin-top: 0;
+   
+
     }
-  
+    }
+   @include responsive("xxl") {
+      flex-direction: column;
+
+    }
 }
 .podcast-item-cont:last-child{
     border: none;
@@ -26,6 +37,18 @@ width: 350px;
     width: 50%;
     gap:64px;
     align-items: center;
+     @include responsive("xxl") {
+     width: 100%;
+
+ 
+
+    }
+      @include responsive("md") {
+     flex-direction:  column;
+     gap: 15px;
+   
+
+    }
 }
 
 .podcaast-meta-info {
@@ -35,6 +58,16 @@ width: 350px;
   align-items: center;
  justify-content: end;
  gap:64px;
+   @include responsive("xxl") {
+     width: 100%;
+   
+
+    }
+       @include responsive("md") {
+     justify-content: space-around;
+   
+
+    }
 }
 .podcast-item-cont:hover .next-page {
   color: rgba(0, 0, 0, 0.8);
