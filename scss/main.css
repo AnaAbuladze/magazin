@@ -4857,7 +4857,7 @@ a {
 @media (max-width: 576px) {
   .container {
     max-width: 100%;
-    padding: 0 31px;
+    padding: 0 21px;
   }
 }
 
@@ -5289,6 +5289,7 @@ header {
 
 .fa-xmark {
   color: #FFFFFF;
+  font-size: 25px;
 }
 
 .mobile-menu-box {
@@ -5315,6 +5316,7 @@ header {
   right: 20px;
   top: 20px;
   padding: 10px;
+  font-size: 20px;
 }
 
 .mobile-menu-nav {
@@ -5579,6 +5581,11 @@ input::placeholder {
 @media (max-width: 1200px) {
   .pod-det span {
     font-size: 20px;
+  }
+}
+@media (max-width: 1040px) {
+  .pod-det span {
+    font-size: 15px;
   }
 }
 
@@ -6260,9 +6267,19 @@ input::placeholder {
 .magazine-categories {
   justify-content: space-between;
 }
+@media (max-width: 1040px) {
+  .magazine-categories {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
 
 .categories-list ul {
   gap: 12px;
+  flex-wrap: wrap;
+  gap: 28px;
+  align-items: center;
+  justify-content: center;
 }
 
 .magazin-list-container {
@@ -6270,6 +6287,12 @@ input::placeholder {
   flex-wrap: wrap;
   width: 100%;
   padding: 60px 0;
+}
+@media (max-width: 1040px) {
+  .magazin-list-container {
+    width: 100%;
+    gap: 20px;
+  }
 }
 
 .magazin-list-item {
@@ -6284,6 +6307,43 @@ input::placeholder {
   align-items: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   gap: 32px;
+  border-top: none;
+}
+.magazin-list-item:nth-child(3n+2) {
+  border-left: none;
+  border-right: none;
+}
+.magazin-list-item:nth-child(-n+3) {
+  border-top: 1px solid #000000;
+}
+@media (max-width: 1500px) {
+  .magazin-list-item {
+    width: 50%;
+  }
+  .magazin-list-item:nth-child(3n+2) {
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+  }
+  .magazin-list-item:nth-child(odd) {
+    border-right: none;
+  }
+  .magazin-list-item:nth-child(3) {
+    border-top: none;
+  }
+}
+@media (max-width: 1040px) {
+  .magazin-list-item {
+    width: 100%;
+    border-top: 1px solid #000000;
+  }
+  .magazin-list-item:nth-child(odd) {
+    border-right: 1px solid #000000;
+  }
+}
+@media (max-width: 768px) {
+  .magazin-list-item {
+    padding: 6px;
+  }
 }
 
 .magazin-list-item:hover {
@@ -6352,6 +6412,7 @@ input::placeholder {
 
 .hero {
   margin-bottom: 173px;
+  padding: 5px;
 }
 
 .detail-header {
@@ -6576,9 +6637,21 @@ input::placeholder {
 .podcast-item-cont {
   border-bottom: 1px solid #000000;
   padding: 48px 0;
+  align-items: center;
+  gap: 40px;
 }
 .podcast-item-cont:first-child {
   margin-top: 144px;
+}
+@media (max-width: 1040px) {
+  .podcast-item-cont:first-child {
+    margin-top: 0;
+  }
+}
+@media (max-width: 1500px) {
+  .podcast-item-cont {
+    flex-direction: column;
+  }
 }
 
 .podcast-item-cont:last-child {
@@ -6636,6 +6709,17 @@ input::placeholder {
   gap: 64px;
   align-items: center;
 }
+@media (max-width: 1500px) {
+  .podcast-title {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .podcast-title {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
 
 .podcaast-meta-info {
   width: 50%;
@@ -6644,6 +6728,16 @@ input::placeholder {
   align-items: center;
   justify-content: end;
   gap: 64px;
+}
+@media (max-width: 1500px) {
+  .podcaast-meta-info {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .podcaast-meta-info {
+    justify-content: space-around;
+  }
 }
 
 .podcast-item-cont:hover .next-page {
@@ -6654,12 +6748,24 @@ input::placeholder {
 .author-container {
   padding: 48px 0;
 }
+@media (max-width: 768px) {
+  .author-container {
+    padding: 0;
+  }
+}
 
 .author-item-cont {
   border-bottom: 1px solid #000000;
   padding: 48px 5px;
   transition: 0.3s;
   overflow: hidden;
+}
+@media (max-width: 768px) {
+  .author-item-cont {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 }
 
 .author-item-cont:last-of-type {
@@ -6668,6 +6774,11 @@ input::placeholder {
 
 .author-info-cont {
   gap: 48px;
+}
+@media (max-width: 1040px) {
+  .author-info-cont {
+    flex-direction: column;
+  }
 }
 
 .podcaast-meta-info {
@@ -6689,4 +6800,28 @@ input::placeholder {
 
 .author-meta {
   gap: 96px;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .author-meta {
+    gap: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .author-meta {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .meta-item-pod {
+    display: flex;
+    gap: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .meta-item-pod {
+    gap: 5px;
+  }
 }/*# sourceMappingURL=main.css.map */
