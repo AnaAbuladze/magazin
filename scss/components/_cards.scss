@@ -68,6 +68,10 @@ align-items: baseline;
       font-size: 20px;
 
     }
+       @include responsive("lg") {
+      font-size: 15px;
+
+    }
 
   }
 }
