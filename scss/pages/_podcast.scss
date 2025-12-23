@@ -46,8 +46,15 @@ width: 350px;
       @include responsive("md") {
      flex-direction:  column;
      gap: 15px;
+     text-align: center;
    
 
+    }
+    .text-default{
+       @include responsive("sm") {
+        font-size: 40px;
+        
+}
     }
 }
 
@@ -65,6 +72,12 @@ width: 350px;
     }
        @include responsive("md") {
      justify-content: space-around;
+   
+
+    }
+      @include responsive("md") {
+    flex-direction: column-reverse;
+    gap: 10px;
    
 
     }
