@@ -36,8 +36,39 @@
             </nav>
         </div>
     </header>
+      <header class="sec-header container">
+        <div class="head flex item-center justify-between p-v-20">
+            <a class="text-default" href="index.html">Fyrre Magazine</a>
+            <button class="mobile-nav-btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="mobile-menu-box">
+            <button class="mobile-menu-close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="mobile-menu-nav">
+                            <a class="text-default" href="index.html">Fyrre Magazine</a>
+
+                <nav>
+                    <ul class=" nav-bar text-medium flex item-center justify-between flex-col ">
+                        <li><a href="magazine.html">Magazine</a></li>
+                        <li><a href="authors.html">Authors</a></li>
+                        <li><a href="podcast.html">Podcast</a></li>
+                        <li><img src="img/h-line.svg" class="m-b-8"></li>
+                        <li>
+                            <div class="social-icons flex item-center ">
+                                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="https://x.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                                <a href="https://x.com/" target="_blank"><i class="fa-solid fa-wifi"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
     <section class="magazine-detail-body container  p-t-32">
-        <div class="pocast-header flex item-center">
+        <div class="pocast-header-det flex item-center">
             <a href="podcast.html" class="flex item-center next-page text-default1"> <i
                     class="fa-solid fa-arrow-left"></i>Go back</a>
             <a href="#" class="detail-page-header">podcast</a>
@@ -63,7 +94,7 @@
                     </div>
                 </a>
 
-                <div class="aside-meta-info flex justify-between listenon-cont">
+                <div class="aside-meta-info-pod flex justify-between listenon-cont">
                     <p class="text-20-bold">Listen On</p>
                     <div class="social-icons flex item-center">
                         <a href="https://open.spotify.com/show/your-podcast-link" target="_blank" title="Spotify">
@@ -77,15 +108,15 @@
                     </div>
                 </div>
                 <div class="aside-article-details flex flex-col p-t-32">
-                    <div class="aside-meta-info flex justify-between">
+                    <div class="aside-meta-info-pod flex justify-between">
                         <p class="text-default-16-bold">Date</p>
                         <p class="text-default-16-regular">16. March 2022</p>
                     </div>
-                    <div class="aside-meta-info flex justify-between">
+                    <div class="aside-meta-info-pod flex justify-between">
                         <p class="text-default-16-bold">Read</p>
                         <p class="text-default-16-regular">2 Min</p>
                     </div>
-                    <div class="aside-meta-info flex justify-between item-center">
+                    <div class="aside-meta-info-pod flex justify-between item-center">
                         <p class="text-default-16-bold">Share</p>
                         <div class="social-icons flex item-center">
                             <a href="https://www.instagram.com/" target="_blank"><i
@@ -399,6 +430,7 @@
 
         </div>
     </footer>
+         <script src="js/mobile-nav.js"></script>
 </body>
 
 </html>
