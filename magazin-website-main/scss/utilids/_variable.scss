@@ -1,0 +1,16 @@
+$primary-color-black: #000000;
+$primary-color-white: #FFFFFF;
+$secondary-color-yellow: #ECC584;
+$transparent-black-50: rgba(255, 255, 255, 0.5);
+
+$xl: 1280px;
+$l: 1024px;
+$m: 768px;
+$s: 480px;
+
+$breakpoints: (
+  "xl": "(max-width: #{$xl})",
+  "l": "(max-width: #{$l})",
+  "m": "(max-width: #{$m})",
+  "s": "(max-width: #{$s})"
+);

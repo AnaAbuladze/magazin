@@ -1,0 +1,69 @@
+.btn-primary {
+  padding: 8px 12px;
+  border-radius: 100px;
+  border: 1px solid $primary-color-black;
+  color: $primary-color-black;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "GeneralSans-regular";
+  font-size: 12px;
+
+  &:hover {
+    background-color: $primary-color-black;
+    color: $primary-color-white;
+  }
+}
+
+.poster-btn {
+  padding: 14px 24px;
+  background-color: $primary-color-black;
+  color: white;
+  text-transform: uppercase;
+  font-family: "GeneralSans-regular";
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.footer-btn {
+  padding: 14px 24px;
+  background-color: $primary-color-white;
+  color: $primary-color-black;
+  text-transform: uppercase;
+  font-family: "GeneralSans-regular";
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #9fa19b
+  }
+   @include responsive("sm") {
+   padding: 7px;
+  }
+}
+
+
+.next-page-btn {
+
+  display: flex;
+  justify-content: end;
+  gap: 12px;
+  transition: all 0.3s ease;
+  right: 0;
+
+  &:hover {
+    transform: translateX(3px);
+  }
+}
+
+.listen-btn {
+  cursor: pointer;
+}
+.btn-primary.active {
+  background: black;
+  color: white;
+}

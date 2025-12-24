@@ -1,0 +1,292 @@
+.detail-header {
+    justify-content: space-between;
+
+    @include responsive("xl") {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px
+    }
+
+    h2 {}
+
+
+
+}
+
+.pocast-header-det {
+    justify-content: space-between;
+    margin-top: 32px;
+
+    @include responsive("sm") {
+        align-items: start;
+    }
+}
+
+
+
+.detail-page-header {
+    @include responsive("sm") {
+        display: none;
+    }
+}
+
+.article-aside-cont {
+    width: 30%;
+
+    @include responsive("lg") {
+
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 40px;
+
+
+    }
+
+    @include responsive("sm") {
+        flex-direction: column;
+
+    }
+
+
+}
+
+.detail-article {
+    gap: 64px;
+
+    margin-bottom: 192px;
+
+    @include responsive("lg") {
+        flex-direction: column-reverse;
+        gap: 20px;
+        padding: 40px;
+        margin-bottom: 100px;
+    }
+     @include responsive("lg") {
+        padding-top:40px ;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.author-info {
+    gap: 16px;
+    border-bottom: 1px solid $primary-color-black;
+
+    @include responsive("lg") {
+        border-bottom: none;
+        gap: 40px;
+    }
+}
+
+.author-img {
+    border-radius: 50%;
+    @include aspectRatio(90, 90);
+}
+
+.aside-article-details {
+    gap: 16px;
+}
+
+.magazine-article-content {
+
+    gap: 24px;
+
+    @include responsive("lg") {
+
+        border-bottom: 1px solid $primary-color-black;
+        padding-bottom: 40px;
+    }
+}
+
+.magazin-list-broder {
+
+    @include responsive("lg") {
+
+        border-top: 1px solid;
+        ;
+    }
+}
+
+
+
+.article-cover {
+    overflow: hidden;
+    object-fit: contain;
+    width: 100%;
+    @include aspectRatio(1530, 880);
+}
+
+.article-paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+.article-quote {
+    gap: 24px;
+    padding: 48px 0;
+    border-top: 1px solid $primary-color-black;
+    border-bottom: 1px solid $primary-color-black;
+
+    div {
+        gap: 24px;
+    }
+}
+
+.new-add {
+    margin-bottom: 192px;
+    border-top: 1px solid $primary-color-black ;
+}
+
+/*podcast detail*/
+.article-header {
+    gap: 16px;
+
+}
+
+.podcast-gap {
+    gap: 96px;
+}
+
+.pod-cont-detail {
+    left: 0;
+    justify-content: space-between;
+    padding: 19px 36px;
+}
+
+.podcast-info {
+    gap: 32px;
+}
+
+.listenon-cont {
+    padding-bottom: 48px;
+    border-bottom: 1px solid $primary-color-black;
+
+    a {
+        font-size: 24px;
+    }
+}
+
+/*author detail*/
+.author-detail-img {
+    width: 350px;
+    @include aspectRatio(350, 350);
+    border-radius: 50%;
+
+}
+
+.author-make {
+    gap: 96px;
+}
+
+.author-make-cont {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 192px;
+
+    @include responsive("lg") {
+        gap: 40px;
+    }
+}
+
+.author-make-item {
+    width: 50%;
+    gap: 48px;
+    border: 1px solid $primary-color-black;
+    transition: 0.3s;
+&:nth-child(-n+2) {
+      border-bottom: none;
+    }
+    &:nth-child(odd) {
+      border-right: none;
+    }
+
+    @include responsive("lg") {
+        width: 100%;
+
+        &:nth-child(-n+2) {
+      border-bottom: 1px solid $primary-color-black;
+    }
+      &:nth-child(odd) {
+      border-right: 1px solid $primary-color-black;
+    }
+    }
+
+    @include responsive("sm") {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.author-make-img {
+    width: 150px;
+    @include aspectRatio(150, 150);
+}
+
+.author-make-text {
+    gap: 16px;
+    align-items: start;
+    justify-content: center;
+}
+
+.author-make-item:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.author-make-item:hover .card-article-headline {
+    color: grey;
+}
+
+.author-make-item img {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+
+}
+
+.author-make-item:hover img {
+    transform: scale(1.05);
+}
+
+.pocast-header {
+    justify-content: space-between;
+    margin-top: 32px;
+
+ @include responsive("sm") {
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  }
+
+  
+
+}
+
+
+.aside-meta-info {
+    justify-content: space-between;
+
+    @include responsive("lg") {
+
+        flex-direction: column;
+        justify-content: baseline;
+    }
+}
+
+.aside-meta-info-pod {
+    justify-content: space-between;
+
+}
+.author-aside-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include responsive("lg") {
+        justify-content: center;
+        align-items: center;
+    }
+}
